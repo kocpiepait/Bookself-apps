@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bookshelf Apps</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-countainer">
+            <h1>Bookshelf Apps</h1>
+            <div class="search-input">
+                <img class="image" src="asset/search.png" alt="..."  />
+                <input type="search" id="cari" class="input" name="" placeholder="Cari Bukumu Disini....">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="wrapp">
+            <div class="form-countainer">
+                <h2>My Books</h2>
+                <form class="form" id="form">
+                    <div class="input-grup">
+                        <input type="text" id="tittle" placeholder="Nama Buku" required>
+                    </div>
+    
+                    <div class="input-grup">
+                        <input type="text" id="author" placeholder="Penulis" required>
+                    </div>
+    
+                    <div class="input-grup">
+                        <input type="number" id="date" placeholder="Tahun" required>
+                    </div>
+                    
+                    <div class="btn-submit">
+                        <input type="submit" value="Add Book"   name="submit" class="btn-add"> 
+                    </div>
+                </form>
+
+                <button type="submit" id="clear" class="btn-clear">Clear All Book</button>
+            </div>
+    
+            <div class="card-countainer">
+                <h3 class="book-status">Undread</h3>
+                <Section class="buku">
+                    <div class="item" id="undread">
+                    </div>
+                </Section>
+            </div>
+    
+            <div class="card-countainer">
+                <h3 class="book-status">Finish</h3>
+                <Section class="buku">
+                    <div  id="Finish">
+                    </div>
+                </Section>
+            </div>
+        </div>
+    </main>
+    <script src="js/scritpt.js"></script>
+</body>
+</html>
